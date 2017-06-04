@@ -98,15 +98,13 @@ namespace BinarySearchTree
         {
             string res = string.Empty;
 
-            if(raiz != null)
+            if (raiz != null)
             {
                 res += raiz.ToString();
 
-                if (raiz.H_left != null)
-                    res += PreOrder(raiz.H_left);
+                res += PreOrder(raiz.H_left);
 
-                if (raiz.H_right != null)
-                    res += PreOrder(raiz.H_right);
+                res += PreOrder(raiz.H_right);
             }
             return res;
         }
@@ -124,15 +122,13 @@ namespace BinarySearchTree
         {
             string res = string.Empty;
 
-            if(raiz != null)
+            if (raiz != null)
             {
-                if (raiz.H_left != null)
-                    res += InOrder(raiz.H_left);
+                res += InOrder(raiz.H_left);
 
                 res += raiz.ToString();
 
-                if (raiz.H_right != null)
-                    res += InOrder(raiz.H_right);
+                res += InOrder(raiz.H_right);
             }
             return res;
         }
@@ -150,13 +146,11 @@ namespace BinarySearchTree
         {
             string res = string.Empty;
 
-            if(raiz != null)
+            if (raiz != null)
             {
-                if (raiz.H_left != null)
-                    res += PostOrder(raiz.H_left);
+                res += PostOrder(raiz.H_left);
 
-                if (raiz.H_right != null)
-                    res += PostOrder(raiz.H_right);
+                res += PostOrder(raiz.H_right);
 
                 res += raiz.ToString();
             }
