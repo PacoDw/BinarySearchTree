@@ -86,15 +86,15 @@ namespace BinarySearchTree
         }
 
         //---------------------------------------------------------------------------------------------------------------------------------------------------------
-        //METODO PRE-ORDEN
-        public string PreOrden()
+        //METODO PRE-ORDER
+        public string PreOrder()
         {
             if (_raiz != null)
-                return PreOrden(_raiz);
+                return PreOrder(_raiz);
 
             return string.Empty;
         }
-        private string PreOrden(Nodo raiz)
+        private string PreOrder(Nodo raiz)
         {
             string res = string.Empty;
 
@@ -103,16 +103,16 @@ namespace BinarySearchTree
                 res += raiz.ToString();
 
                 if (raiz.H_left != null)
-                    res += PreOrden(raiz.H_left);
+                    res += PreOrder(raiz.H_left);
 
                 if (raiz.H_right != null)
-                    res += PreOrden(raiz.H_right);
+                    res += PreOrder(raiz.H_right);
             }
             return res;
         }
 
         //---------------------------------------------------------------------------------------------------------------------------------------------------------
-        //METODO IN-ORDEN
+        //METODO IN-ORDER
         public string InOrder()
         {
             if (_raiz != null)
@@ -138,25 +138,25 @@ namespace BinarySearchTree
         }
 
         //---------------------------------------------------------------------------------------------------------------------------------------------------------
-        //METODO POST-ORDEN
-        public string PostOrden()
+        //METODO POST-ORDER
+        public string PostOrder()
         {
             if (_raiz != null)
-                return PostOrden(_raiz);
+                return PostOrder(_raiz);
 
             return string.Empty;
         }
-        private string PostOrden(Nodo raiz)
+        private string PostOrder(Nodo raiz)
         {
             string res = string.Empty;
 
             if(raiz != null)
             {
                 if (raiz.H_left != null)
-                    res += PostOrden(raiz.H_left);
+                    res += PostOrder(raiz.H_left);
 
                 if (raiz.H_right != null)
-                    res += PostOrden(raiz.H_right);
+                    res += PostOrder(raiz.H_right);
 
                 res += raiz.ToString();
             }

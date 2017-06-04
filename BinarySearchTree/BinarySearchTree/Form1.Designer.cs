@@ -32,10 +32,10 @@
             this.bttonAdd = new System.Windows.Forms.Button();
             this.txtResultado = new System.Windows.Forms.TextBox();
             this.bttonContains = new System.Windows.Forms.Button();
-            this.bttonPreOrden = new System.Windows.Forms.Button();
+            this.bttonPreOrder = new System.Windows.Forms.Button();
             this.bttonCount = new System.Windows.Forms.Button();
             this.bttonInOrder = new System.Windows.Forms.Button();
-            this.bttonPostOrden = new System.Windows.Forms.Button();
+            this.bttonPostOrder = new System.Windows.Forms.Button();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -81,17 +81,17 @@
             this.bttonContains.UseVisualStyleBackColor = true;
             this.bttonContains.Click += new System.EventHandler(this.bttonContains_Click);
             // 
-            // bttonPreOrden
+            // bttonPreOrder
             // 
-            this.bttonPreOrden.AutoSize = true;
-            this.bttonPreOrden.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttonPreOrden.Location = new System.Drawing.Point(133, 10);
-            this.bttonPreOrden.Name = "bttonPreOrden";
-            this.bttonPreOrden.Size = new System.Drawing.Size(104, 30);
-            this.bttonPreOrden.TabIndex = 4;
-            this.bttonPreOrden.Text = "PreOrden";
-            this.bttonPreOrden.UseVisualStyleBackColor = true;
-            this.bttonPreOrden.Click += new System.EventHandler(this.bttonPreOrden_Click);
+            this.bttonPreOrder.AutoSize = true;
+            this.bttonPreOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttonPreOrder.Location = new System.Drawing.Point(133, 10);
+            this.bttonPreOrder.Name = "bttonPreOrden";
+            this.bttonPreOrder.Size = new System.Drawing.Size(104, 30);
+            this.bttonPreOrder.TabIndex = 4;
+            this.bttonPreOrder.Text = "PreOrder";
+            this.bttonPreOrder.UseVisualStyleBackColor = true;
+            this.bttonPreOrder.Click += new System.EventHandler(this.bttonPreOrder_Click);
             // 
             // bttonCount
             // 
@@ -119,15 +119,15 @@
             // 
             // bttonPostOrden
             // 
-            this.bttonPostOrden.AutoSize = true;
-            this.bttonPostOrden.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttonPostOrden.Location = new System.Drawing.Point(133, 82);
-            this.bttonPostOrden.Name = "bttonPostOrden";
-            this.bttonPostOrden.Size = new System.Drawing.Size(104, 30);
-            this.bttonPostOrden.TabIndex = 6;
-            this.bttonPostOrden.Text = "PostOrden";
-            this.bttonPostOrden.UseVisualStyleBackColor = true;
-            this.bttonPostOrden.Click += new System.EventHandler(this.bttonPostOrden_Click);
+            this.bttonPostOrder.AutoSize = true;
+            this.bttonPostOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttonPostOrder.Location = new System.Drawing.Point(133, 82);
+            this.bttonPostOrder.Name = "bttonPostOrden";
+            this.bttonPostOrder.Size = new System.Drawing.Size(104, 30);
+            this.bttonPostOrder.TabIndex = 6;
+            this.bttonPostOrder.Text = "PostOrder";
+            this.bttonPostOrder.UseVisualStyleBackColor = true;
+            this.bttonPostOrder.Click += new System.EventHandler(this.bttonPostOrder_Click);
             // 
             // txtBuscar
             // 
@@ -145,9 +145,9 @@
             this.Controls.Add(this.txtResultado);
             this.Controls.Add(this.bttonCount);
             this.Controls.Add(this.bttonContains);
-            this.Controls.Add(this.bttonPostOrden);
+            this.Controls.Add(this.bttonPostOrder);
             this.Controls.Add(this.bttonInOrder);
-            this.Controls.Add(this.bttonPreOrden);
+            this.Controls.Add(this.bttonPreOrder);
             this.Controls.Add(this.bttonAdd);
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.txtNumero);
@@ -164,10 +164,10 @@
         private System.Windows.Forms.Button bttonAdd;
         private System.Windows.Forms.TextBox txtResultado;
         private System.Windows.Forms.Button bttonContains;
-        private System.Windows.Forms.Button bttonPreOrden;
+        private System.Windows.Forms.Button bttonPreOrder;
         private System.Windows.Forms.Button bttonCount;
         private System.Windows.Forms.Button bttonInOrder;
-        private System.Windows.Forms.Button bttonPostOrden;
+        private System.Windows.Forms.Button bttonPostOrder;
         private System.Windows.Forms.TextBox txtBuscar;
     }
 }

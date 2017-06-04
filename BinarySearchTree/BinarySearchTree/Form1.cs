@@ -35,24 +35,24 @@ namespace BinarySearchTree
         }
 
         //---------------------------------------------------------------------------------------------------------------------------------------------------------
-        //BUTTON PRE-ORDEN CLICK
-        private void bttonPreOrden_Click(object sender, EventArgs e)
+        //BUTTON PRE-ORDER CLICK
+        private void bttonPreOrder_Click(object sender, EventArgs e)
         {
-            txtResultado.Text = arbol.PreOrden();
+            txtResultado.Text = arbol.PreOrder();
         }
 
         //---------------------------------------------------------------------------------------------------------------------------------------------------------
-        //BUTTON IN-ORDEN CLICK
+        //BUTTON IN-ORDER CLICK
         private void bttonInOrder_Click(object sender, EventArgs e)
         {
             txtResultado.Text = arbol.InOrder();
         }
 
         //---------------------------------------------------------------------------------------------------------------------------------------------------------
-        //BUTTON POST-ORDEN CLICK
-        private void bttonPostOrden_Click(object sender, EventArgs e)
+        //BUTTON POST-ORDER CLICK
+        private void bttonPostOrder_Click(object sender, EventArgs e)
         {
-            txtResultado.Text = arbol.PostOrden();
+            txtResultado.Text = arbol.PostOrder();
         }
 
         //---------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -75,5 +75,7 @@ namespace BinarySearchTree
         {
             txtResultado.Text = Convert.ToString(arbol.Count);
         }
+
+
     }
 }
